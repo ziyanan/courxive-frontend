@@ -36,3 +36,62 @@
     transform: rotate(360deg);
   }
 }
+
+/* Custom Css */
+.nft__item_wrap {
+  height: 130px !important;
+  overflow: hidden !important;
+}
+.fa-star {
+  color: #e59819;
+}
+select,
+.search-bar {
+  width: 100%;
+  padding: 16px;
+  border: 2px solid #8364e2;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+/* Custom css */
+
+.toast-success {
+  border: 1px solid green;
+  width: 15%;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px 0px;
+}
+.toast-success p {
+  margin: 0px;
+}
+
+.toast:not(.showing):not(.show) {
+  opacity: 1;
+}
+
+.toast-body {
+  padding: 0.75rem;
+  word-wrap: break-word;
+  background-color: rgb(227 225 225);
+}
+.toast {
+  float: right;
+  bottom: 0px;
+  position: absolute;
+  right: 0;
+}
+.toast-body {
+  background-size: cover;
+
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.toast {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
