@@ -76,7 +76,7 @@ const Courses = () => {
             
               return array;
             }
-            setCourses(prevCourses);
+            setCourses(shuffle(prevCourses));
 
 
           })
