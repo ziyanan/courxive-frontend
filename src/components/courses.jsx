@@ -171,7 +171,7 @@ const Courses = () => {
                 }}
               >
                 <option value="288">Web Development</option>
-                <option value="274">Life style</option>
+                <option value="274">Lifestyle</option>
                 <option value="273">Photography</option>
               </select>
               <div className="row" style={{ margin: "10px 0px" }} />
