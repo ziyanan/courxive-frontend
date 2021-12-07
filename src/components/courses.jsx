@@ -43,6 +43,8 @@ const Courses = () => {
           }
         });
         // setCourses(structData);
+
+        // get coursera courses from backend at heroku
         axios.get("https://courxive.herokuapp.com/api/course/getCoursera")
           .then((res) => {
             
@@ -82,6 +84,10 @@ const Courses = () => {
           })
           .catch(error => console.log("add course error", error))
         
+
+
+
+
         // structData.map((item)=>{
         //   axios.post("https://courxive.herokuapp.com/api/course/add",{...item})
         //   .then((res)=>{
@@ -98,6 +104,7 @@ const Courses = () => {
       });
 
   }, [p, subcategory]);
+  
   useEffect(() => {
     axios
       .get("https://courxive.herokuapp.com/api/course/allCourse")
@@ -107,6 +114,7 @@ const Courses = () => {
       })
       .catch((err) => console.log("all course err", err));
   }, []);
+
   const LoadMore = (e) => {
     console.log("button cliked");
     setP(p + 1);
@@ -164,7 +172,7 @@ const Courses = () => {
                 }}
               >
                 <option value="288">Web Development</option>
-                <option value="274">Life style</option>
+                <option value="274">Lifestyle</option>
                 <option value="273">Photo graphy </option>
               </select>
               <div className="row" style={{ margin: "10px 0px" }} />

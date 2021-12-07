@@ -6,6 +6,7 @@ const Login = (props) => {
   const [success, setSuccess] = useState("");
   const [error, setError] = useState("");
   const onSubmit = (e) => {
+    // prevent auto-refresh
     e.preventDefault();
     const data = {
       email,
